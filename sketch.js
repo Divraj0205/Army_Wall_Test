@@ -32,5 +32,5 @@ function draw() {
   if(damage<80){
     bullet.shapeColor=color(0,225,0);
   } 
-	text(car.x,750,200);
+	text(bullet.x,750,200);
 }
