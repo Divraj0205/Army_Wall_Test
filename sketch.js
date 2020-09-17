@@ -24,7 +24,7 @@ function draw() {
 		damage=0.5*weight*speed*speed/thickness*thickness*thickness;		
   }
   if(damage>180){
-    bullet.shapeColor=color(225,0,0);S
+    bullet.shapeColor=color(225,0,0);
   }
   if(damage>80&&damage<180){
     bullet.shapeColor=color(230,230,0);
