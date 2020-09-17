@@ -10,15 +10,15 @@ function setup() {
   wall=createSprite(1200,200,30,height/2);
   wall.shapeColor="white";
   bullet=createSprite(50, 200, 10, 5);
-  bullet.velocityX=speed;
   bullet.shapeColor="grey";
 }
 
 function draw() {
-	background("black");  
-	drawSprites();
-//bullet.x=mouseX;
-//bullet.y=mouseY;
+  background("black");     
+  drawSprites();
+  //bullet.x=mouseX;
+  //bullet.y=mouseY;
+	bullet.velocityX=speed;
   if(bullet.x>wall.x){
 		bullet.velocityX=0;
 		damage=0.5*weight*speed*speed/thickness*thickness*thickness;		
