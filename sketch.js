@@ -19,10 +19,9 @@ function draw() {
 	drawSprites();
 //car.x=mouseX;
 //car.y=mouseY;
-	if(bullet.x>wall.x){
+  if(bullet.x>wall.x){
 		bullet.velocityX=0;
-		damage=0.5*weight*speed*speed/thickness*thickness*thickness;
-		
+		damage=0.5*weight*speed*speed/thickness*thickness*thickness;		
   }
   if(damage>180){
     bullet.shapeColor=color(225,0,0);S
@@ -32,6 +31,6 @@ function draw() {
   }
   if(damage<80){
     bullet.shapeColor=color(0,225,0);
-  }
-	//text(car.x,750,200);
+  } 
+	text(car.x,750,200);
 }
