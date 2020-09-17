@@ -9,7 +9,7 @@ function setup() {
   weight=random(30,52);
   wall=createSprite(1200,200,thickness,height/2);
   wall.shapeColor="white";
-  bullet=createSprite(50, 200, 50, 20);
+  bullet=createSprite(50, 200, 10, 5);
   bullet.velocityX=speed;
   bullet.shapeColor="grey";
 }
