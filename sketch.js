@@ -21,7 +21,7 @@ function draw() {
 //car.y=mouseY;
 	if(bullet.x>wall.x){
 		bullet.velocityX=0;
-		damage=0.5*weight*speed*speed/thickness^3;
+		damage=0.5*weight*speed*speed/thickness*thickness*thickness;
 		
   }
   if(damage>180){
