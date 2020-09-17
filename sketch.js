@@ -35,3 +35,4 @@ function draw() {
   } 
   text(bullet.x,750,200);
 }
+ 
