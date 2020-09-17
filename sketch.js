@@ -17,8 +17,8 @@ function setup() {
 function draw() {
 	background("black");  
 	drawSprites();
-//car.x=mouseX;
-//car.y=mouseY;
+//bullet.x=mouseX;
+//bullet.y=mouseY;
   if(bullet.x>wall.x){
 		bullet.velocityX=0;
 		damage=0.5*weight*speed*speed/thickness*thickness*thickness;		
