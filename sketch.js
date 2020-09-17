@@ -1,6 +1,6 @@
 var wall,bullet;
 var speed,weight,thickness;
-var damge;
+var damage;
 
 
 function setup() {
