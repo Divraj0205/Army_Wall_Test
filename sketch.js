@@ -27,7 +27,7 @@ function draw() {
   if(damage>180){
     bullet.shapeColor=color(225,0,0);S
   }
-  if(damage>80&&deformation<180){
+  if(damage>80&&damage<180){
     bullet.shapeColor=color(230,230,0);
   }
   if(damage<80){
