@@ -20,7 +20,7 @@ function draw() {
   //bullet.x=mouseX;
   //bullet.y=mouseY;
 	bullet.x=bullet.x+random(223,321);
-  if(bullet.x>wall.x&&bullet.velocityX=speed){
+  if(bullet.x>wall.x){
     bullet.velocityX=0;
     damage=0.5*weight*speed*speed/thickness*thickness*thickness;		
   }
