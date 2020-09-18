@@ -20,7 +20,7 @@ function draw() {
   drawSprites();
   //bullet.x=mouseX;
   //bullet.y=mouseY;
-  if(hasColided(bullet,wall)){
+  if(hasCollided(bullet,wall)){
     bullet.velocityX=0;
     damage=0.5*weight*speed*speed/thickness*thickness*thickness;		
   }
