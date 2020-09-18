@@ -26,9 +26,15 @@ function draw() {
   }
   if(damage > 10){
     wall.shapeColor=color(225,0,0);
+    stroke="white";
+    textSize(100);
+    text("Rejected",600,200);
   }
   if(damage < 10){
     wall.shapeColor=color(0,225,0);
+    stroke="white";
+    textSize(100);
+    text("Pass",700,200);
   } 
   //text(bullet.x,750,200);
 }
@@ -38,6 +44,8 @@ function hasCollided(bullet,wall){
   wallLeftEdge=wall.x;
   if(bulletRightEdge>=wallLeftEdge){
      return true;
+    
      }
   return false;
+  
 }
