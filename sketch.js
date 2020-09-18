@@ -1,7 +1,7 @@
 var wall,bullet;
 var speed,weight,thickness;
 var damage;
-
+var bulletRightEdge,wallLeftEdge;
 
 function setup() {
   createCanvas(1600,400);
@@ -25,10 +25,10 @@ function draw() {
     damage=0.5*weight*speed*speed/thickness*thickness*thickness;		
   }
   if(damage > 10){
-    bullet.shapeColor=color(225,0,0);
+    wall.shapeColor=color(225,0,0);
   }
   if(damage < 10){
-    bullet.shapeColor=color(0,225,0);
+    wall.shapeColor=color(0,225,0);
   } 
   //text(bullet.x,750,200);
 }
