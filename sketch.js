@@ -26,13 +26,13 @@ function draw() {
   }
   if(damage > 10){
     wall.shapeColor=color(225,0,0);
-    fill("red");
+    fill(color(225,0,0));
     textSize(100);
     text("Rejected",600,200);
   }
   if(damage < 10){
     wall.shapeColor=color(0,225,0);
-    fill("green");
+    fill(color(0,225,0));
     textSize(100);
     text("Pass",700,200);
   } 
