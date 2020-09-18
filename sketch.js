@@ -22,7 +22,7 @@ function draw() {
   //bullet.y=mouseY;
   if(hasColided(bullet,wall)){
     bullet.velocityX=0;
-    damage=0.5*weight*speed*speed/(thickness*thickness*thickness);		
+    damage=0.5*weight*speed*speed/(thickness*thickness);		
   }
   if(damage > 10){
     bullet.shapeColor=color(225,0,0);
